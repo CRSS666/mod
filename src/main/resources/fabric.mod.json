@@ -17,7 +17,7 @@
 	"icon": "assets/crss/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": [
+		"server": [
 			"cc.crss.mod.CRSSMod"
 		]
 	},
