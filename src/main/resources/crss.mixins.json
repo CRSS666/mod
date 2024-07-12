@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "cc.crss.mod.mixin",
+	"compatibilityLevel": "JAVA_8",
+	"mixins": [
+		"CRSSMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

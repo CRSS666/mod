@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "crss",
+	"version": "${version}",
+	"name": "CRSS Mod",
+	"description": "The CRSS Server side mod. It is weird that, since you're seeing this, you're in the client... Don't question it!",
+	"authors": [
+		"Blurryface",
+		"WorldWidePixel",
+		"TheClashFruit"
+	],
+	"contact": {
+		"homepage": "https://crss.cc/",
+		"sources": "https://git.theclashfruit.me/CRSS/mod"
+	},
+	"license": "ARR-FOR-NOW",
+	"icon": "assets/crss/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"cc.crss.mod.CRSSMod"
+		]
+	},
+	"mixins": [
+		"crss.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.14.4",
+		"java": ">=8",
+		"fabric": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
