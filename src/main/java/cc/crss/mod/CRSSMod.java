@@ -1,9 +1,8 @@
 package cc.crss.mod;
-
 import net.fabricmc.api.DedicatedServerModInitializer;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import cc.crss.mod.util.CommandRegister;
 
 public class CRSSMod implements DedicatedServerModInitializer {
 
@@ -12,5 +11,6 @@ public class CRSSMod implements DedicatedServerModInitializer {
 	public void onInitializeServer() {
 
 		LOGGER.info("Hello World!");
+		CommandRegister.registerCommands();
 	}
 }

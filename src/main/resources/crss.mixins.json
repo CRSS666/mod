@@ -3,7 +3,8 @@
 	"package": "cc.crss.mod.mixin",
 	"compatibilityLevel": "JAVA_8",
 	"mixins": [
-		"CRSSMixin"
+		"CRSSMixin",
+		"PlayerEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
