@@ -48,7 +48,10 @@ public class WhenCommand {
                 randomDateString };
         String randomDate = datesSelection[rand.nextInt(datesSelection.length)];
 
-        context.getSource().sendFeedback(new LiteralText("[CRSS] " + randomDate), false);
+        context.getSource().getMinecraftServer().sendMessage(new LiteralText("<" + context.getSource().getName() + "> " + context.getInput()));
+        context.getSource().getPlayer().sendMessage(new LiteralText("<" + context.getSource().getName() + "> " + context.getInput()));
+        context.getSource().getMinecraftServer().sendMessage(new LiteralText("<CRSS> " + randomDate));
+        context.getSource().getPlayer().sendMessage(new LiteralText("<CRSS> " + randomDate));
 
         return 1;
     }

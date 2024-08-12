@@ -10,7 +10,7 @@ public class CRSSMod implements DedicatedServerModInitializer {
 	@Override
 	public void onInitializeServer() {
 
-		LOGGER.info("Hello World!");
+		LOGGER.info("CRSS initialising.");
 		CommandRegister.registerCommands();
 	}
 }

@@ -1,12 +1,12 @@
 {
-	"required": true,
-	"package": "cc.crss.mod.mixin",
-	"compatibilityLevel": "JAVA_8",
-	"mixins": [
-		"CRSSMixin",
-		"PlayerEntityMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
+  "required": true,
+  "package": "cc.crss.mod.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "CRSSMixin",
+    "EnchantmentMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
 	}
 }
