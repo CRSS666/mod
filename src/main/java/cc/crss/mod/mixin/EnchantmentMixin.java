@@ -22,7 +22,7 @@ public class EnchantmentMixin {
 
     /**
      * @author WorldWidePixel
-     * @reason for 1.14 CRSS fun
+     * @reason for 1.14+ CRSS fun
      */
     @Overwrite
     public final boolean isDifferent(Enchantment other) {
