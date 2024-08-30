@@ -1,6 +1,7 @@
 plugins {
 	id 'fabric-loom' version '1.7-SNAPSHOT'
 	id 'maven-publish'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
 }
 
 version = project.mod_version
@@ -26,7 +27,8 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	
+
+    implementation 'com.google.code.gson:gson:2.10.1'
 }
 
 processResources {
@@ -49,6 +51,10 @@ java {
 
 	sourceCompatibility = JavaVersion.VERSION_1_8
 	targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+shadowJar {
+    relocate('com.google.gson', 'cc.crss.mod.deps.gson')
 }
 
 jar {
