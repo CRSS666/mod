@@ -1,10 +1,9 @@
 {
   "required": true,
   "package": "cc.crss.mod.mixin",
-  "compatibilityLevel": "JAVA_8",
+  "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "CRSSMixin",
-    "EnchantmentMixin"
+    "CRSSMixin"
   ],
   "injectors": {
     "defaultRequire": 1

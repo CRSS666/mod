@@ -87,7 +87,7 @@ public class ApiServer {
                             ArrayList<String> worlds = new ArrayList<>();
 
                             server.getWorlds().forEach(world -> {
-                                worlds.add(world.getDimension().getType().toString());
+                                worlds.add(world.asString());
                             });
 
                             String jsonData = new ServerInfo(

@@ -1,5 +1,5 @@
 package cc.crss.mod.command;
-
+/*
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.context.CommandContext;
@@ -10,9 +10,9 @@ import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.LiteralText;
 
 import java.util.Random;
-
+*/
 public class WhenCommand {
-
+/*
     public static void register(CommandDispatcher<ServerCommandSource> dispatcher, boolean dedicated) {
         dispatcher.register((LiteralArgumentBuilder)((LiteralArgumentBuilder)CommandManager.literal("when"))
                 .then(CommandManager.argument("query", MessageArgumentType.message()).executes(WhenCommand::run)));
@@ -48,12 +48,12 @@ public class WhenCommand {
                 randomDateString };
         String randomDate = datesSelection[rand.nextInt(datesSelection.length)];
 
-        context.getSource().getMinecraftServer().sendMessage(new LiteralText("<" + context.getSource().getName() + "> " + context.getInput()));
-        context.getSource().getPlayer().sendMessage(new LiteralText("<" + context.getSource().getName() + "> " + context.getInput()));
-        context.getSource().getMinecraftServer().sendMessage(new LiteralText("<CRSS> " + randomDate));
-        context.getSource().getPlayer().sendMessage(new LiteralText("<CRSS> " + randomDate));
+        context.getSource().getMinecraftServer().sendBasicMessageM2D(new LiteralText("<" + context.getSource().getName() + "> " + context.getInput()));
+        context.getSource().getPlayer().sendBasicMessageM2D(new LiteralText("<" + context.getSource().getName() + "> " + context.getInput()));
+        context.getSource().getMinecraftServer().sendBasicMessageM2D(new LiteralText("<CRSS> " + randomDate));
+        context.getSource().getPlayer().sendBasicMessageM2D(new LiteralText("<CRSS> " + randomDate));
 
         return 1;
     }
-
+*/
 }
